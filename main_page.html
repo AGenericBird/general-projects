@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael Laprise — Database Administrator Portfolio</title>
+  <meta name="description" content="Portfolio of Michael Laprise — Database Administrator in training, showcasing SQL projects, data models, and scripts." />
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">ML</div>
+        <div>
+          <div style="font-weight:700">Michael Laprise</div>
+          <div class="muted" style="font-size:.85rem">Database Administrator in Training</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work Samples</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Hello, I'm Michael Laprise</h1>
+        <p class="subtitle">Database Administrator in training passionate about data integrity, performance tuning, and backend infrastructure. I enjoy designing efficient SQL systems and improving reliability across clusters.</p>
+        <div class="row" style="margin-top:1rem">
+          <button class="btn primary" onclick="downloadResume()">Download Resume</button>
+          <a href="#work" class="btn">View Work</a>
+        </div>
+      </div>
+
+      <aside class="card profile">
+        <div class="avatar">ML</div>
+        <div style="font-weight:700">Michael Laprise</div>
+        <div class="muted">Database Administrator in Training</div>
+        <div class="cta">
+          <a class="btn" href="mailto:michael@example.com">Email</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </aside>
+    </section>
+
+    <main>
+      <section id="projects" class="section card">
+        <h2>Projects</h2>
+        <p class="muted">Recent work and exercises related to SQL optimization, backups, and performance analysis.</p>
+        <div class="projects-grid">
+          <article class="project">
+            <h3>SQL Index Optimization</h3>
+            <p class="muted">Improved query speed by 40% through analysis of execution plans and selective indexing.</p>
+            <div class="tags"><span class="tag">SQL Server</span><span class="tag">Indexing</span></div>
+          </article>
+
+          <article class="project">
+            <h3>Backup and Restore Automation</h3>
+            <p class="muted">Developed scripts to automate daily database backups with integrity verification.</p>
+            <div class="tags"><span class="tag">T-SQL</span><span class="tag">PowerShell</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section card">
+        <h2>Work Samples & Downloads</h2>
+        <p class="muted">Here are some examples of work I have done related to the IT field throughout the years.</p>
+        <ul>
+          <li><a href="files/student_management.sql" download>Team Lead for Ticketing System research and deployment project</a></li>
+          <li><a href="files/backup_script.ps1" download>Drink Fountain Dispenser Engineering Project</a></li>
+          <li><a href="files/database_design.pdf" download>Computer building projects</a></li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">SQL Server</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Oracle SQL</div>
+          <div class="skill">Microsoft Server</div>
+          <div class="skill">PGAdmin</div>
+          <div class="skill">DBeaver</div>
+          <div class="skill">CLI Database</div>
+          <div class="skill">Backup & Recovery</div>
+          <div class="skill">Performance Tuning</div>
+          <div class="skill">Query Optimization</div>
+          <div class="skill">Linux Administration</div>
+          <div class="skill">Shell & PowerShell Scripting</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section card">
+        <h2>Contact</h2>
+        <p class="muted">Feel free to reach out to me at MiLaprise2@gmail.com</p>
+      </section>
+    </main>
+
+    <footer class="muted">© <span id="year"></span> Michael Laprise</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function downloadResume(){
+      const url = 'files/Michael_Laprise_Resume.pdf'; // replace with actual file path
+      window.open(url, '_blank');
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const status = document.getElementById('status');
+      status.textContent = `Thank you ${name}! This is a static demo — integrate with Formspree or Netlify for live contact.`;
+      setTimeout(()=> status.textContent = 'Template form only', 4000);
+    }
+  </script>
+</body>
+</html>
+
