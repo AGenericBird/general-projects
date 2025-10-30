@@ -77,3 +77,9 @@ footer{margin-top:2rem;color:var(--muted);text-align:center}
 .actions{margin-top:1rem}
 .downloads{margin:0;padding-left:1.1rem}
 .downloads li{margin-bottom:0.5rem}
+
+/* Gallery */
+.hidden { display: none !important; }
+.gallery { display:flex; gap:0.6rem; flex-wrap:wrap; }
+.thumb { width:160px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); }
+
