@@ -82,4 +82,18 @@ footer{margin-top:2rem;color:var(--muted);text-align:center}
 .hidden { display: none !important; }
 .gallery { display:flex; gap:0.6rem; flex-wrap:wrap; }
 .thumb { width:160px; border-radius:8px; border:1px solid rgba(255,255,255,0.06); }
+.gallery img {
+  width: 100%;
+  max-width: 400px;   /* actual thumbnail size */
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
 
