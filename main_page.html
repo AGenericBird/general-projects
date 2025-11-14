@@ -1,3 +1,5 @@
+<!-- Initial Page set up, charset link title, and more -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
 
 
 
-
+<!-- Main body and Header, Some  -->
 <body>
   <div class="container">
     <header>
@@ -110,6 +112,7 @@
             <li><a href="Documents/Ticketing System - Stakeholder Presentation - Comparison.pptx" download>Ticketing System Shareholder Presentation</a></li>
             <li><a href="Documents/Designing an Ethical Algorithm.pdf" download>Designing an Ethical Loaning Algorithm</a></li>
             <li><a href="Documents/Change Management - OSYS 3017 -700.xlsx" download>Disaster Recovery - Change Management and Testing Plan</a></li>
+            <li><a href="Documents/Ikea_Shopping.zip" download>Ikea Shopping Cart</a></li>
             <li><a>PostgreSQL Command line Database </a></li>
             <li><a>Computer building projects</a></li>
           </ul>
@@ -183,7 +186,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     function downloadResume(){
-      const url = 'Documents/Resume - Michael Laprise.pdf'; // replace with actual file path
+      const url = 'Documents/Resume - Michael Laprise.pdf'; 
       window.open(url, '_blank');
     }
 
@@ -207,7 +210,6 @@ function setupGallery(toggleId, galleryId){
   });
 }
 
-// Setup both galleries
 setupGallery("toggleGallery1", "galleryArea1");
 setupGallery("toggleGallery2", "galleryArea2");
 
